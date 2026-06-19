@@ -8,13 +8,26 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Forum Backend (prog3271-group-project)",
+    title: "Forum Web App",
     description:
-      "Reddit-like forum API built with Node.js, TypeScript, and clean architecture. Features authentication, posts, comments, likes, and an admin dashboard with unit tests.",
-    tech: ["TypeScript", "Node.js", "Express", "PostgreSQL", "Jest"],
+      "A full-stack Reddit-style forum application with a clean architecture backend (Node.js/TypeScript) and a JavaScript frontend. Features user authentication with JWT, post and comment creation, a like system, and an admin dashboard. The backend is organized into domain, application, and infrastructure layers for maintainability and testability, with Jest unit tests covering core use cases.",
+    tech: ["TypeScript", "Node.js", "Express", "PostgreSQL", "Jest", "JavaScript", "CSS"],
     github: "https://github.com/Nayeoncho/prog3271-group-project",
   },
-  // 프로젝트를 추가하세요
+  {
+    title: "Sorting Algorithm Visualizer",
+    description:
+      "An interactive real-time visualizer for three classic sorting algorithms — Bubble Sort, Merge Sort, and Quick Sort — built with Python and Pygame. Color-coded elements highlight comparisons (orange) and sorted items (purple), while live counters track comparisons and swaps. Users can reset the array, adjust animation speed with arrow keys, and switch algorithms on the fly.",
+    tech: ["Python", "Pygame"],
+    github: "https://github.com/Nayeoncho/sorting-visualizer",
+  },
+  {
+    title: "Meeting Room Booking App",
+    description:
+      "A cross-platform mobile application for booking meeting rooms, built with Flutter and Dart. Designed to run on Android and iOS, the app provides a streamlined interface for viewing room availability and making reservations. The project demonstrates multi-platform development with a single shared codebase targeting mobile, web, and desktop environments.",
+    tech: ["Dart", "Flutter", "Android", "iOS"],
+    github: "https://github.com/Nayeoncho/PROG2436-Final",
+  },
 ];
 
 export default function Projects() {
