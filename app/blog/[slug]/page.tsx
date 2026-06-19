@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { posts } from "../../components/Blog";
+import { posts } from "../../data/posts";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -21,7 +21,7 @@ export default async function BlogPost({ params }: Props) {
       <div className="max-w-2xl mx-auto">
         <Link
           href="/#blog"
-          className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline mb-8 inline-block"
+          className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline mb-10 inline-block"
         >
           ← Back to Blog
         </Link>
@@ -37,15 +37,26 @@ export default async function BlogPost({ params }: Props) {
               </span>
             ))}
           </div>
-          <h1 className="text-3xl font-bold mb-3">{post.title}</h1>
+          <h1 className="text-3xl font-bold mb-3 leading-tight">{post.title}</h1>
           <time className="text-sm text-neutral-500">{post.date}</time>
+          <p className="mt-4 text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            {post.summary}
+          </p>
         </header>
 
-        <div className="prose dark:prose-invert max-w-none text-neutral-700 dark:text-neutral-300 leading-relaxed">
-          <p>{post.summary}</p>
-          <p className="text-neutral-400 dark:text-neutral-600 mt-8 text-sm italic">
-            Full content coming soon — check back later!
-          </p>
+        <hr className="border-neutral-200 dark:border-neutral-800 mb-10" />
+
+        <div className="space-y-8 text-neutral-700 dark:text-neutral-300 leading-relaxed">
+          {post.sections.map((section, i) => (
+            <div key={i}>
+              {section.heading && (
+                <h2 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+                  {section.heading}
+                </h2>
+              )}
+              <p>{section.body}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
