@@ -5,7 +5,7 @@ const skills = {
   languages: ["TypeScript", "JavaScript", "Java", "Python", "SQL"],
   frontend: ["React", "Next.js", "HTML/CSS", "Tailwind CSS"],
   backend: ["Node.js", "Express", "REST APIs"],
-  tools: ["Git", "GitHub", "Jest", "PostgreSQL", "Docker"],
+  tools: ["Git", "GitHub", "Jest", "MongoDB", "PostgreSQL", "Docker"],
 } as const;
 
 export default function About({ dict }: { dict: Dictionary["about"] }) {

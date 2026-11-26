@@ -13,7 +13,7 @@ type Project = {
 const projects: Project[] = [
   {
     id: "forum",
-    tech: ["TypeScript", "Node.js", "Express", "PostgreSQL", "Jest", "JavaScript", "CSS"],
+    tech: ["TypeScript", "Node.js", "Express", "MongoDB", "Jest", "JavaScript", "CSS"],
     github: "https://github.com/Nayeoncho/prog3271-group-project",
   },
   {
