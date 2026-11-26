@@ -1,18 +1,29 @@
 import Link from "next/link";
-import { posts } from "../data/posts";
+import { getPosts } from "../data/posts";
+import type { Dictionary, Locale } from "../i18n";
 
-export default function Blog() {
+export default function Blog({
+  lang,
+  dict,
+}: {
+  lang: Locale;
+  dict: Dictionary["blog"];
+}) {
+  const posts = getPosts(lang);
+
   return (
     <section id="blog" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4">Blog / TIL</h2>
-        <p className="text-neutral-600 dark:text-neutral-400 mb-12">
-          Things I learned from my courses and projects — written down so I don&apos;t forget.
-        </p>
+        <h2 className="text-3xl font-bold mb-4">{dict.title}</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 mb-12">{dict.intro}</p>
 
         <div className="space-y-6">
           {posts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
+            <Link
+              key={post.slug}
+              href={`/${lang}/blog/${post.slug}`}
+              className="block group"
+            >
               <article className="border border-neutral-200 dark:border-neutral-800 rounded-xl p-6 hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
                 <div className="flex items-start justify-between gap-4 flex-wrap mb-3">
                   <h3 className="font-semibold text-lg group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">

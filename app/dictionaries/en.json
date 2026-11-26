@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Nayeon Cho — Software Developer",
+    "description": "Portfolio and blog of Nayeon Cho, a software developer and QA engineer."
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog / TIL",
+    "contact": "Contact",
+    "toggleMenu": "Toggle menu",
+    "switchLanguage": "한국어",
+    "switchLanguageLabel": "Switch to Korean"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "role": "Software Developer & QA Engineer passionate about building reliable, user-friendly web applications.",
+    "viewProjects": "View Projects",
+    "getInTouch": "Get in Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraphs": [
+      "I'm a software developer and QA engineer currently studying at Conestoga College. I enjoy building full-stack web applications and writing clean, testable code.",
+      "Through my coursework and personal projects, I've worked with clean architecture patterns, REST APIs, and modern TypeScript ecosystems. I care about code quality and developer experience.",
+      "When I'm not coding, I like learning new tools, documenting what I learn, and contributing to open-source projects."
+    ],
+    "techStack": "Tech Stack",
+    "categories": {
+      "languages": "Languages",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & DevOps"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "github": "GitHub →",
+    "demo": "Live Demo →",
+    "items": {
+      "forum": {
+        "title": "Forum Web App",
+        "description": "A full-stack Reddit-style forum application with a clean architecture backend (Node.js/TypeScript) and a JavaScript frontend. Features user authentication with JWT, post and comment creation, a like system, and an admin dashboard. The backend is organized into domain, application, and infrastructure layers for maintainability and testability, with Jest unit tests covering core use cases."
+      },
+      "sorting": {
+        "title": "Sorting Algorithm Visualizer",
+        "description": "An interactive real-time visualizer for three classic sorting algorithms — Bubble Sort, Merge Sort, and Quick Sort — built with Python and Pygame. Color-coded elements highlight comparisons (orange) and sorted items (purple), while live counters track comparisons and swaps. Users can reset the array, adjust animation speed with arrow keys, and switch algorithms on the fly."
+      },
+      "booking": {
+        "title": "Meeting Room Booking App",
+        "description": "A cross-platform mobile application for booking meeting rooms, built with Flutter and Dart. Designed to run on Android and iOS, the app provides a streamlined interface for viewing room availability and making reservations. The project demonstrates multi-platform development with a single shared codebase targeting mobile, web, and desktop environments."
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog / TIL",
+    "intro": "Things I learned from my courses and projects — written down so I don't forget.",
+    "back": "← Back to Blog"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "I'm currently open to new opportunities. Whether it's a job, a project, or just a chat — feel free to reach out."
+  },
+  "footer": {
+    "text": "Nayeon Cho. Built with Next.js & Tailwind CSS."
+  }
+}
