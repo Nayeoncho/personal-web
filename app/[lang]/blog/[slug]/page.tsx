@@ -1,30 +1,48 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { posts } from "../../data/posts";
+import { getPosts } from "../../../data/posts";
+import { getDictionary, hasLocale, locales } from "../../../i18n";
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 };
 
 export function generateStaticParams() {
-  return posts.map((post) => ({ slug: post.slug }));
+  return locales.flatMap((lang) =>
+    getPosts(lang).map((post) => ({ lang, slug: post.slug }))
+  );
 }
 
 export default async function BlogPost({ params }: Props) {
-  const { slug } = await params;
-  const post = posts.find((p) => p.slug === slug);
+  const { lang, slug } = await params;
+  if (!hasLocale(lang)) notFound();
+
+  const dict = getDictionary(lang);
+  const post = getPosts(lang).find((p) => p.slug === slug);
 
   if (!post) notFound();
+
+  const otherLang = lang === "en" ? "ko" : "en";
 
   return (
     <div className="min-h-screen px-6 py-24">
       <div className="max-w-2xl mx-auto">
-        <Link
-          href="/#blog"
-          className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline mb-10 inline-block"
-        >
-          ← Back to Blog
-        </Link>
+        <div className="flex items-center justify-between gap-4 mb-10">
+          <Link
+            href={`/${lang}#blog`}
+            className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline"
+          >
+            {dict.blog.back}
+          </Link>
+          <Link
+            href={`/${otherLang}/blog/${post.slug}`}
+            hrefLang={otherLang}
+            aria-label={dict.nav.switchLanguageLabel}
+            className="border border-neutral-300 dark:border-neutral-700 rounded-md px-3 py-1 text-xs font-medium text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+          >
+            {dict.nav.switchLanguage}
+          </Link>
+        </div>
 
         <header className="mb-10">
           <div className="flex gap-2 flex-wrap mb-4">
