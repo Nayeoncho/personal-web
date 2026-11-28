@@ -15,10 +15,10 @@ export default function Hero({ dict }: { dict: Dictionary["hero"] }) {
         </p>
         <div className="flex gap-4 flex-wrap">
           <a
-            href="#projects"
+            href="#strengths"
             className="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors"
           >
-            {dict.viewProjects}
+            {dict.viewStrengths}
           </a>
           <a
             href="#contact"

@@ -1,14 +1,40 @@
 import type { Dictionary } from "../i18n";
 
-// 기술 이름은 언어와 관계없이 동일하므로 코드에 두고, 카테고리 이름만 번역합니다.
-const skills = {
-  languages: ["TypeScript", "JavaScript", "Java", "Python", "SQL"],
-  frontend: ["React", "Next.js", "HTML/CSS", "Tailwind CSS"],
-  backend: ["Node.js", "Express", "REST APIs"],
-  tools: ["Git", "GitHub", "Jest", "MongoDB", "PostgreSQL", "Docker"],
-} as const;
+// 기술 이름은 언어와 관계없이 동일하므로 코드에 둡니다.
+const softwareSkills = [
+  "Python",
+  "SQL",
+  "JavaScript",
+  "TypeScript",
+  "Dart / Flutter",
+  "React / Next.js",
+  "Node.js",
+  "MongoDB",
+  "Git / GitHub",
+];
+
+function Chips({ items }: { items: readonly string[] }) {
+  return (
+    <div className="flex flex-wrap gap-2">
+      {items.map((item) => (
+        <span
+          key={item}
+          className="text-sm px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-neutral-700 dark:text-neutral-300"
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+  );
+}
 
 export default function About({ dict }: { dict: Dictionary["about"] }) {
+  const groups = [
+    { key: "certifications", label: dict.categories.certifications, items: dict.certifications },
+    { key: "languages", label: dict.categories.languages, items: dict.languages },
+    { key: "software", label: dict.categories.software, items: softwareSkills },
+  ];
+
   return (
     <section id="about" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
@@ -23,24 +49,15 @@ export default function About({ dict }: { dict: Dictionary["about"] }) {
 
           <div>
             <h3 className="font-semibold mb-4 text-neutral-900 dark:text-neutral-100">
-              {dict.techStack}
+              {dict.skillsTitle}
             </h3>
             <div className="space-y-4">
-              {(Object.keys(skills) as (keyof typeof skills)[]).map((category) => (
-                <div key={category}>
+              {groups.map((group) => (
+                <div key={group.key}>
                   <p className="text-xs font-medium text-neutral-500 uppercase tracking-wider mb-2">
-                    {dict.categories[category]}
+                    {group.label}
                   </p>
-                  <div className="flex flex-wrap gap-2">
-                    {skills[category].map((skill) => (
-                      <span
-                        key={skill}
-                        className="text-sm px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-neutral-700 dark:text-neutral-300"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+                  <Chips items={group.items} />
                 </div>
               ))}
             </div>
