@@ -30,6 +30,7 @@ function Chips({ items }: { items: readonly string[] }) {
 
 export default function About({ dict }: { dict: Dictionary["about"] }) {
   const groups = [
+    { key: "plant", label: dict.categories.plant, items: dict.plant },
     { key: "certifications", label: dict.categories.certifications, items: dict.certifications },
     { key: "languages", label: dict.categories.languages, items: dict.languages },
     { key: "software", label: dict.categories.software, items: softwareSkills },
