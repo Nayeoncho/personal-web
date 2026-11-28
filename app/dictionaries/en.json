@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Nayeon Cho — Technical Sales & Software Developer",
-    "description": "Portfolio of Nayeon Cho, a former gas engineer with a software development background, aiming for a technical sales career."
+    "description": "Portfolio of Nayeon Cho, a former production process operator at Linde Korea with a software development background, aiming for a technical sales career."
   },
   "nav": {
     "about": "About",
@@ -15,15 +15,15 @@
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "role": "Former gas engineer with a software development background, looking to build a career in technical sales.",
+    "role": "Former production process operator with a software development background, looking to build a career in technical sales.",
     "viewStrengths": "See My Strengths",
     "getInTouch": "Get in Touch"
   },
   "about": {
     "title": "About Me",
     "paragraphs": [
-      "I worked as a gas engineer for about five years, then graduated from the Computer Programming diploma program at Conestoga College in April 2026.",
-      "I'm especially interested in technical sales — roles where I can combine hands-on engineering experience with software skills to understand technical problems and explain solutions clearly.",
+      "I worked for about five years as a process operator on the production team at Linde Korea, then graduated from the Computer Programming diploma program at Conestoga College in April 2026.",
+      "I'm especially interested in technical sales — roles where I can combine hands-on production experience with software skills to understand technical problems and explain solutions clearly.",
       "Through my coursework and personal projects I learned Python, web and mobile development, databases, and software testing. I use these skills to understand how technical products work and to explain them in plain language."
     ],
     "skillsTitle": "Skills & Credentials",
@@ -44,8 +44,8 @@
     "intro": "Four things I can bring to a technical sales team.",
     "items": [
       {
-        "title": "Hands-on engineering background",
-        "description": "About five years as a gas engineer, plus certifications in electricity, production automation, and electronic CAD. I'm comfortable with technical equipment and engineering terminology."
+        "title": "Hands-on production experience",
+        "description": "About five years as a production-team process operator at Linde Korea, plus certifications in electricity, production automation, and electronic CAD. I'm familiar with how a production site runs and the equipment used there."
       },
       {
         "title": "Explaining technical topics clearly",
