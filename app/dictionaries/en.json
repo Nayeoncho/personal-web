@@ -6,6 +6,7 @@
   "nav": {
     "name": "Nayeon Cho",
     "about": "About",
+    "experience": "Experience",
     "strengths": "Strengths",
     "projects": "Projects",
     "blog": "Learning Notes",
@@ -30,10 +31,18 @@
     ],
     "skillsTitle": "Skills & Credentials",
     "categories": {
+      "plant": "Plant & Process",
       "software": "Software",
       "languages": "Languages",
       "certifications": "Certifications"
     },
+    "plant": [
+      "ASU plant operation",
+      "PLC-based monitoring",
+      "P&ID reading",
+      "Startup & shutdown",
+      "Gas purity analysis"
+    ],
     "languages": ["Korean (native)", "English (studied in Canada)"],
     "certifications": [
       "Craftsman Production Automation (2017)",
@@ -41,13 +50,56 @@
       "Craftsman Electronic CAD (2015)"
     ]
   },
+  "experience": {
+    "title": "Experience",
+    "role": "Process Operator, Production Team",
+    "company": "Linde Korea",
+    "place": "ASU (Air Separation Unit) plant",
+    "duration": "About 5 years",
+    "summary": "Operated and managed industrial gas production equipment, monitored the process, controlled product quality, and responded to equipment problems.",
+    "items": [
+      {
+        "title": "Plant operation and monitoring",
+        "points": [
+          "Operated and managed industrial gas production equipment at an ASU plant.",
+          "Checked the operating status and process data of key equipment in real time through a PLC-based monitoring system: air compressors, cooling fans, air suction filters, and air purifiers.",
+          "Used P&IDs to understand the process flow and how equipment and piping connect.",
+          "Compared monitoring data with the actual equipment condition during regular field inspections.",
+          "Took part in plant startup and shutdown, learning how the whole process and its equipment work together."
+        ]
+      },
+      {
+        "title": "Trouble response and supply continuity",
+        "points": [
+          "When an equipment alarm or process trouble occurred, located the problem from monitoring data, checked the equipment on site, and took the necessary action.",
+          "When a trouble could affect gas supply, started the backup line so that the customer's gas supply was not interrupted."
+        ]
+      },
+      {
+        "title": "Product quality control",
+        "points": [
+          "Continuously checked the purity of the industrial gas produced and managed the analyzers.",
+          "When a product could drift out of the quality standard, checked process data and equipment status and took action to keep the quality stable."
+        ]
+      },
+      {
+        "title": "Maintenance and collaboration",
+        "points": [
+          "Took part in many scheduled and unscheduled maintenance jobs, covering equipment inspection and maintenance.",
+          "Shared abnormalities and equipment conditions found during operation with the people concerned, and worked with them to restart the process stably after maintenance."
+        ]
+      }
+    ],
+    "takeawayTitle": "What this means for technical sales",
+    "takeaway": "Stable plant operation is directly tied to the customer's own production. I learned on the job that a technical problem has to be found quickly and that supply has to continue. In technical sales, I can bring this by understanding a customer's operating environment and technical requirements accurately, and by connecting customers with internal technical teams."
+  },
   "strengths": {
     "title": "Strengths",
     "intro": "Four things I can bring to a technical sales team.",
     "items": [
       {
-        "title": "Hands-on production experience",
-        "description": "About five years as a production-team process operator at Linde Korea, plus certifications in electricity, production automation, and electronic CAD. I'm familiar with how a production site runs and the equipment used there."
+        "title": "Hands-on plant experience",
+        "description": "About five years operating an ASU plant at Linde Korea. I saw first-hand how stable equipment operation connects to customers' own production, and I hold certifications in electricity, production automation, and electronic CAD."
       },
       {
         "title": "Explaining technical topics clearly",

@@ -31,7 +31,7 @@ const projects: Project[] = [
 
 export default function Projects({ dict }: { dict: Dictionary["projects"] }) {
   return (
-    <section id="projects" className="py-24 px-6">
+    <section id="projects" className="py-24 px-6 bg-neutral-50 dark:bg-neutral-900/50">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-4">{dict.title}</h2>
         <p className="text-neutral-600 dark:text-neutral-400 mb-12">{dict.intro}</p>
