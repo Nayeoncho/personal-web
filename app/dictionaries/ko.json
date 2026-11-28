@@ -4,6 +4,7 @@
     "description": "린데코리아 생산팀 공정운전원 출신으로 소프트웨어 개발을 공부하고 기술영업 직무를 목표로 하는 조나연(Nayeon Cho)의 포트폴리오입니다."
   },
   "nav": {
+    "name": "조나연",
     "about": "소개",
     "strengths": "강점",
     "projects": "프로젝트",
@@ -14,6 +15,7 @@
     "switchLanguageLabel": "영어로 보기"
   },
   "hero": {
+    "name": "조나연",
     "greeting": "안녕하세요, 저는",
     "role": "린데코리아 생산팀 공정운전원 출신으로 소프트웨어 개발을 공부했고, 기술영업 직무로 커리어를 이어가고자 합니다.",
     "viewStrengths": "강점 보기",
@@ -109,6 +111,6 @@
     "intro": "현재 새로운 기회, 특히 기술영업 포지션을 찾고 있습니다. 채용 제안이든, 프로젝트든, 가벼운 대화든 편하게 연락해 주세요."
   },
   "footer": {
-    "text": "Nayeon Cho. Next.js와 Tailwind CSS로 제작했습니다."
+    "text": "조나연. Next.js와 Tailwind CSS로 제작했습니다."
   }
 }

@@ -4,6 +4,7 @@
     "description": "Portfolio of Nayeon Cho, a former production process operator at Linde Korea with a software development background, aiming for a technical sales career."
   },
   "nav": {
+    "name": "Nayeon Cho",
     "about": "About",
     "strengths": "Strengths",
     "projects": "Projects",
@@ -14,6 +15,7 @@
     "switchLanguageLabel": "Switch to Korean"
   },
   "hero": {
+    "name": "Nayeon Cho",
     "greeting": "Hi, I'm",
     "role": "Former production process operator with a software development background, looking to build a career in technical sales.",
     "viewStrengths": "See My Strengths",

@@ -43,7 +43,7 @@ export default function Navbar({
     <nav className="fixed top-0 w-full bg-white/80 dark:bg-neutral-900/80 backdrop-blur-sm border-b border-neutral-200 dark:border-neutral-800 z-50">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href={`/${lang}`} className="font-bold text-lg tracking-tight">
-          Nayeon Cho
+          {dict.name}
         </Link>
 
         {/* Desktop nav */}

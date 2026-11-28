@@ -8,7 +8,7 @@ export default function Hero({ dict }: { dict: Dictionary["hero"] }) {
           {dict.greeting}
         </p>
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          Nayeon Cho
+          {dict.name}
         </h1>
         <p className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 mb-8 max-w-2xl">
           {dict.role}
