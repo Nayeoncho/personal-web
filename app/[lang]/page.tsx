@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
+import Strengths from "../components/Strengths";
 import Projects from "../components/Projects";
 import Blog from "../components/Blog";
 import Contact from "../components/Contact";
@@ -24,6 +25,7 @@ export default async function Home({
       <main>
         <Hero dict={dict.hero} />
         <About dict={dict.about} />
+        <Strengths dict={dict.strengths} />
         <Projects dict={dict.projects} />
         <Blog lang={lang} dict={dict.blog} />
         <Contact dict={dict.contact} />

@@ -1,12 +1,13 @@
 {
   "meta": {
     "title": "Nayeon Cho — Technical Sales & Software Developer",
-    "description": "Portfolio and blog of Nayeon Cho, a former gas engineer with a software development background, aiming for a technical sales career."
+    "description": "Portfolio of Nayeon Cho, a former production process operator at Linde Korea with a software development background, aiming for a technical sales career."
   },
   "nav": {
     "about": "About",
+    "strengths": "Strengths",
     "projects": "Projects",
-    "blog": "Blog / TIL",
+    "blog": "Learning Notes",
     "contact": "Contact",
     "toggleMenu": "Toggle menu",
     "switchLanguage": "한국어",
@@ -14,49 +15,94 @@
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "role": "Former gas engineer with a software development background, looking to build a career in technical sales.",
-    "viewProjects": "View Projects",
+    "role": "Former production process operator with a software development background, looking to build a career in technical sales.",
+    "viewStrengths": "See My Strengths",
     "getInTouch": "Get in Touch"
   },
   "about": {
     "title": "About Me",
     "paragraphs": [
-      "I worked as a gas engineer for about five years, then graduated from the Computer Programming diploma program at Conestoga College in April 2026.",
-      "I'm especially interested in technical sales — roles where I can combine hands-on engineering experience with software skills to understand technical problems and explain solutions clearly.",
-      "Through my coursework and personal projects, I've worked with clean architecture patterns, REST APIs, and modern TypeScript ecosystems. I care about code quality and developer experience.",
-      "I also enjoy building full-stack web applications and writing clean, testable code. When I'm not coding, I like learning new tools, documenting what I learn, and contributing to open-source projects."
+      "I worked for about five years as a process operator on the production team at Linde Korea, then graduated from the Computer Programming diploma program at Conestoga College in April 2026.",
+      "I'm especially interested in technical sales — roles where I can combine hands-on production experience with software skills to understand technical problems and explain solutions clearly.",
+      "Through my coursework and personal projects I learned Python, web and mobile development, databases, and software testing. I use these skills to understand how technical products work and to explain them in plain language."
     ],
-    "techStack": "Tech Stack",
+    "skillsTitle": "Skills & Credentials",
     "categories": {
+      "software": "Software",
       "languages": "Languages",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "tools": "Tools & DevOps"
-    }
+      "certifications": "Certifications"
+    },
+    "languages": ["Korean (native)", "English (studied in Canada)"],
+    "certifications": [
+      "Craftsman Production Automation (2017)",
+      "Craftsman Electricity (2016)",
+      "Craftsman Electronic CAD (2015)"
+    ]
+  },
+  "strengths": {
+    "title": "Strengths",
+    "intro": "Four things I can bring to a technical sales team.",
+    "items": [
+      {
+        "title": "Hands-on production experience",
+        "description": "About five years as a production-team process operator at Linde Korea, plus certifications in electricity, production automation, and electronic CAD. I'm familiar with how a production site runs and the equipment used there."
+      },
+      {
+        "title": "Explaining technical topics clearly",
+        "description": "I turn what I study into plain-language notes and visual tools: six written learning notes, and a sorting-algorithm visualizer that shows comparisons and swaps live."
+      },
+      {
+        "title": "Software skills that support customers",
+        "description": "Python, SQL, and app development help me understand how software products work and build simple tools or demos when they are needed."
+      },
+      {
+        "title": "Teamwork and ownership",
+        "description": "I finished three projects, two of them in teams. I made 18 of 23 commits on a three-person mobile app and 55 of 88 on a two-person web service."
+      }
+    ]
   },
   "projects": {
     "title": "Projects",
+    "intro": "Three projects from my diploma program, each showing a different strength.",
     "github": "GitHub →",
     "demo": "Live Demo →",
     "items": {
-      "forum": {
-        "title": "Forum Web App",
-        "description": "A full-stack Reddit-style forum application with a clean architecture backend (Node.js/TypeScript) and a JavaScript frontend. Features user authentication with JWT, post and comment creation, a like system, and an admin dashboard. The backend is organized into domain, application, and infrastructure layers for maintainability and testability, with Jest unit tests covering core use cases."
+      "booking": {
+        "title": "Meeting Room Booking App",
+        "description": "A cross-platform mobile app for finding and booking meeting rooms, built with a team of three using Flutter and Dart.",
+        "highlights": [
+          "18 of the team's 23 commits",
+          "7 screens: home, bookings, room detail, new booking, map, camera, settings",
+          "Local SQLite database with 4 tables: room categories, rooms, bookings, reviews",
+          "GPS location with a nearest-room calculation and a map view"
+        ]
       },
       "sorting": {
         "title": "Sorting Algorithm Visualizer",
-        "description": "An interactive real-time visualizer for three classic sorting algorithms — Bubble Sort, Merge Sort, and Quick Sort — built with Python and Pygame. Color-coded elements highlight comparisons (orange) and sorted items (purple), while live counters track comparisons and swaps. Users can reset the array, adjust animation speed with arrow keys, and switch algorithms on the fly."
+        "description": "An interactive program that shows how Bubble, Merge, and Quick Sort work step by step, so the difference between them is easy to see. Built on my own with Python and Pygame.",
+        "highlights": [
+          "17 commits, all mine",
+          "3 algorithms with color-coded comparisons and sorted items",
+          "Live counters for comparisons and swaps",
+          "Controls to reset the array, change speed, and switch algorithms"
+        ]
       },
-      "booking": {
-        "title": "Meeting Room Booking App",
-        "description": "A cross-platform mobile application for booking meeting rooms, built with Flutter and Dart. Designed to run on Android and iOS, the app provides a streamlined interface for viewing room availability and making reservations. The project demonstrates multi-platform development with a single shared codebase targeting mobile, web, and desktop environments."
+      "forum": {
+        "title": "Forum Web App",
+        "description": "A Reddit-style forum service with user accounts, three permission levels, and an admin statistics view, built with a team of two using Node.js and TypeScript.",
+        "highlights": [
+          "55 of the team's 88 commits",
+          "17 REST API endpoints",
+          "3 roles: user, admin, super admin, with JWT login and bcrypt password hashing",
+          "10 Jest unit tests, run without a database"
+        ]
       }
     }
   },
   "blog": {
-    "title": "Blog / TIL",
-    "intro": "Things I learned from my courses and projects — written down so I don't forget.",
-    "back": "← Back to Blog"
+    "title": "Learning Notes",
+    "intro": "Technical topics I studied, written up in my own words as practice in explaining what I learn.",
+    "back": "← Back to Learning Notes"
   },
   "contact": {
     "title": "Contact",
